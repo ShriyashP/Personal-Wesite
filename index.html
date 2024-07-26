@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Shriyash Patil Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+        <div id="main">
+
+            <!-- Header -->
+            <header id="header">
+                <h1>Shriyash Patil</h1>
+                <p>SOFTWARE ENGINEER</p>
+                <p>Welcome to My Digital Space! I am Shriyash Patil, a dedicated software engineer and master’s student specializing in Software Engineering with a strong passion for software development, full-stack development, and machine learning. With extensive hands-on experience in front-end and back-end development, I bring a collaborative spirit and a relentless drive for innovation. Come explore my projects, skills, and journey as I strive to create impactful tech solutions.</p>
+                <nav>
+                    <ul>
+                        
+                        <li><a href="education.html" class="icon solid fa-graduation-cap"target="_blank"><span class="label">Education</span></a></li>
+                        <li><a href="Projects.html" class="icon solid fa-briefcase"target="_blank"><span class="label">Projects</span></a></li>
+                        <li><a href="Experience.html" class="icon solid fa-suitcase"target="_blank"><span class="label">Experience</span></a></li>
+                        
+                    </ul>
+                </nav>
+                <p><a href="https://www.linkedin.com/in/shriyash-patil-073a09b9/" target="_blank" class="label">LinkedIn</a> |
+					<a href="https://github.com/ShriyashP"target="_blank" class="label"> GitHub</a> |
+					<a href="assets/Shriyash_Patil.pdf" target="_blank">Resume</a> | 
+                <a href="mailto:shriyash81@gmail.com" target="_blank">Email</a></p>
+            </header>
+
+            
+
+            <!-- Footer -->
+            <footer id="footer">
+                <span class="copyright">&copy; Shriyash Patil</span>
+            </footer>
+
+        </div>
+    </div>
+    <script>
+        window.onload = function() { document.body.classList.remove('is-preload'); }
+        window.ontouchmove = function() { return false; }
+        window.onorientationchange = function() { document.body.scrollTop = 0; }
+
+        // Function to toggle the visibility of the education section
+        function toggleEducationSection() {
+            var section = document.getElementById('education-section');
+            if (section.style.display === 'none' || section.style.display === '') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        }
+		document.getElementById('education-button').addEventListener('click', toggleEducationSection);
+    </script>
+</body>
+</html>
